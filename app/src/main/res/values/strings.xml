@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">aplicacion_agua</string>
     <string name="bienve">Bienvenido a</string>
-    <string name="name">Waterapp</string>
+    <string name="name">CleWa!</string>
     <string name="title_activity_login">LoginActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
