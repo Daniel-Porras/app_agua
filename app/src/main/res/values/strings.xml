@@ -2,13 +2,12 @@
     <string name="app_name">aplicacion_agua</string>
     <string name="bienve">Bienvenido a</string>
     <string name="name">CleWa!</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="slogan">Con el agua deberías hacer una tregua</string>
+    <string name="bienvenido_inicio">¡Bienvenido!</string>
+    <string name="ingresodatos">Ingresa los datos requeridos para poder continuar:</string>
+    <string name="nombre">Nombre</string>
+    <string name="valor">Último consumo (m^3)</string>
+    <string name="estrato">Estrato social:</string>
+    <string name="empezar">Empezar</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
