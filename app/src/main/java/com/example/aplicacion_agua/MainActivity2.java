@@ -12,6 +12,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        // opciones del estrato social
         sp1 = (Spinner) findViewById(R.id.spinner);
         String[] opciones = {"1", "2", "3", "4","5","6"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_daniel, opciones);
