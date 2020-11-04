@@ -6,7 +6,7 @@
     <string name="bienvenido_inicio">¡Bienvenido!</string>
     <string name="ingresodatos">Ingresa los datos requeridos para poder continuar:</string>
     <string name="nombre">Nombre</string>
-    <string name="valor">Último consumo (m^3)</string>
+    <string name="valor">Último consumo (m<sup>3</sup>)</string>
     <string name="estrato">Estrato social:</string>
     <string name="empezar">Empezar</string>
 
