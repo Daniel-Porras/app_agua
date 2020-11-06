@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="siguiente"
     tools:context=".MainActivity2">
 
     <TextView
@@ -89,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:onClick="siguiente"
         android:text="@string/empezar"
         android:textColorLink="#00BCD4"
         app:layout_constraintBottom_toBottomOf="parent"
