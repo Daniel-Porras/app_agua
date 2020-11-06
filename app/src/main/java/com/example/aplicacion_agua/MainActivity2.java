@@ -19,5 +19,5 @@ public class MainActivity2 extends AppCompatActivity {
         sp1.setAdapter(adapter);
     } //hola :v funciona :V
     //comit
-    //holaaaaaaaaaaaa
+    //asasadadas
 }
