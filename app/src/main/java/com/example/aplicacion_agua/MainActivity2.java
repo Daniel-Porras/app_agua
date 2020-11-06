@@ -19,7 +19,8 @@ public class MainActivity2 extends AppCompatActivity {
         String[] opciones = {"1", "2", "3", "4","5","6"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_daniel, opciones);
         sp1.setAdapter(adapter);
-    } //hola :v funciona :V
+    }
+    //boton de comenzar (camviar a actividad 3)
     public void siguiente(View view){
         Intent intent =new Intent(MainActivity2.this, MainActivity3.class);
         startActivity(intent);
