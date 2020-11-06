@@ -2,7 +2,9 @@ package com.example.aplicacion_agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -18,7 +20,10 @@ public class MainActivity2 extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_daniel, opciones);
         sp1.setAdapter(adapter);
     } //hola :v funciona :V
-    //comit
-    //asasadadas
-    //activiti tri
+    public void siguiente(View view){
+        Intent intent =new Intent(MainActivity2.this, MainActivity3.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
