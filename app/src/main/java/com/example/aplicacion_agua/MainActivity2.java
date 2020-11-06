@@ -18,4 +18,5 @@ public class MainActivity2 extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.spinner_item_daniel, opciones);
         sp1.setAdapter(adapter);
     } //hola :v
+    //comit
 }
