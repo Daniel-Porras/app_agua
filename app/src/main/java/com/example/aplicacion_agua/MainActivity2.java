@@ -20,5 +20,5 @@ public class MainActivity2 extends AppCompatActivity {
     } //hola :v funciona :V
     //comit
     //asasadadas
-    //vadvasdf
+
 }
