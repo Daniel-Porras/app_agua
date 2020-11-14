@@ -9,4 +9,11 @@
     <string name="valor">Último consumo (m<sup>3</sup>)</string>
     <string name="estrato">Estrato social:</string>
     <string name="empezar">Empezar</string>
+    <string name="boton1">¿Quieres ahorrar en tú factura de agua este mes?</string>
+    <string name="boton2">Consejos para el manejo eficiente del agua</string>
+    <string name="boton3">Razones por las cuales debes empezar a ahorrar el agua</string>
+    <string name="boton4">Progreso de este mes</string>
+    <string name="boton5">Ver datos de los sensores</string>
+    <string name="boton6">Dispositivo de electrocoagulación</string>
+
 </resources>
