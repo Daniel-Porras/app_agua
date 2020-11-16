@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 //Esta parte es la activity del boton 1
 public class ActivityBoton1 extends AppCompatActivity {
-    private EditText cantidad_ahorrar
+    private EditText cantidad_ahorrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
