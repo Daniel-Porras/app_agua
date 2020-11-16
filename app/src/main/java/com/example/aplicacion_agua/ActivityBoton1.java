@@ -16,7 +16,7 @@ public class ActivityBoton1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boton1);
-        cantidad_ahorrar = findViewById(R.id.cantidad_ahorrar);
+        cantidad_ahorrar = (EditText) findViewById(R.id.cantidad_ahorrar);
     }
     //Boton para volver al menú
     public void Volver(View view){
