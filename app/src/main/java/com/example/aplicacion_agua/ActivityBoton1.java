@@ -29,6 +29,6 @@ public class ActivityBoton1 extends AppCompatActivity {
         String cantidad = cantidad_ahorrar.getText().toString();
         if (cantidad.length()==0){
             Toast.makeText(this, "Debes ingresar una cantidad válida",Toast.LENGTH_LONG).show();
-    }
+    }}
 
 }
