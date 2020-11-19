@@ -2,7 +2,9 @@ package com.example.aplicacion_agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -31,6 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
     public void resgistro(View view){
         String nombre =usuario.getText().toString();
         String consumo1 =ultConsumo.getText().toString();
+        String seleccion =sp1.getSelectedItem().toString();
         if (nombre.length()==0){
             Toast.makeText(this, "Debes ingresar un nombre de usuario",Toast.LENGTH_LONG).show();
         }
@@ -38,6 +41,13 @@ public class MainActivity2 extends AppCompatActivity {
             Toast.makeText(this, "Debes ingresar el último consumo",Toast.LENGTH_LONG).show();
         }
         if (nombre.length()!=0 && consumo1.length()!=0){
+
+            SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
+            SharedPreferences.Editor objeditor = preferencias.edit();
+            objeditor.putString("usuario", nombre);
+            objeditor.putString("consumo", consumo1);
+            objeditor.putString("estrato", seleccion);
+            objeditor.commit();
             Intent intent =new Intent(MainActivity2.this, MainActivity3.class);
             startActivity(intent);
             finish();
