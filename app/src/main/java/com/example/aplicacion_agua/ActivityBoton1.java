@@ -2,7 +2,9 @@ package com.example.aplicacion_agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -29,6 +31,12 @@ public class ActivityBoton1 extends AppCompatActivity {
         String cantidad = cantidad_ahorrar.getText().toString();
         if (cantidad.length()==0){
             Toast.makeText(this, "Debes ingresar una cantidad válida",Toast.LENGTH_LONG).show();
-    }}
+        }
+        else{
+            SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
+            SharedPreferences.Editor objeditor = preferencias.edit();
+            objeditor.putString("ahorro", cantidad);
+        }
+    }
 
 }
