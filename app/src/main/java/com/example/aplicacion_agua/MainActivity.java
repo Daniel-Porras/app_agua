@@ -2,7 +2,9 @@ package com.example.aplicacion_agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -31,9 +33,17 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent =new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(intent);
-                finish();
+                SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
+                String datos = preferencias.getString("usuario", "");
+                if (datos.length()==0){
+                    Intent intent =new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(intent);
+                    finish();
+                }else {
+                    Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         }, 4000);
     }

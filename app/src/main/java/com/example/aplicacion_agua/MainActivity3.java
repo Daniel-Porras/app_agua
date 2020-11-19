@@ -2,16 +2,24 @@ package com.example.aplicacion_agua;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    private TextView usu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+        usu=(TextView)findViewById(R.id.nomUsuario);
+        SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
+        String datos = preferencias.getString("usuario", "");
+        usu.setText("Bienvenido "+datos);
     }
     //Ingresar boton 1
     public void boton1(View view){
