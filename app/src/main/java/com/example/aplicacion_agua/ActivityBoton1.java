@@ -33,10 +33,13 @@ public class ActivityBoton1 extends AppCompatActivity {
             Toast.makeText(this, "Debes ingresar una cantidad válida",Toast.LENGTH_LONG).show();
         }
         else{
+            Toast.makeText(this, "Valor guardado",Toast.LENGTH_SHORT).show();
             SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
             SharedPreferences.Editor objeditor = preferencias.edit();
             objeditor.putString("ahorro", cantidad);
+            Intent intent =new Intent(ActivityBoton1.this, MainActivity3.class);
+            startActivity(intent);
+            finish();
         }
     }
-
 }

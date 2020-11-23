@@ -41,7 +41,7 @@ public class MainActivity2 extends AppCompatActivity {
             Toast.makeText(this, "Debes ingresar el último consumo",Toast.LENGTH_LONG).show();
         }
         if (nombre.length()!=0 && consumo1.length()!=0){
-
+            Toast.makeText(this, "Usuario registrado",Toast.LENGTH_SHORT).show();
             SharedPreferences preferencias =getSharedPreferences("datosUsuario", Context.MODE_PRIVATE);
             SharedPreferences.Editor objeditor = preferencias.edit();
             objeditor.putString("usuario", nombre);
