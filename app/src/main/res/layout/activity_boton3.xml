@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/imageView25"
                 android:layout_width="match_parent"
-                android:layout_height="296dp"
+                android:layout_height="298dp"
                 android:contentDescription="@string/boton3.1"
                 app:srcCompat="@drawable/rio" />
 
