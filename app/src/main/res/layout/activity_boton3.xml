@@ -6,6 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Boton3">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="77dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="match_parent"
+                android:layout_height="296dp"
+                android:contentDescription="@string/boton3.1"
+                app:srcCompat="@drawable/rio" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="match_parent"
+                android:layout_height="271dp"
+                android:contentDescription="@string/boton3.2"
+                app:srcCompat="@drawable/tingua" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:contentDescription="@string/boton3.3"
+                app:srcCompat="@drawable/sequia" />
+
+        </LinearLayout>
+    </ScrollView>
+
     <Button
         android:id="@+id/button11"
         android:layout_width="wrap_content"
@@ -43,4 +79,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.578" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
