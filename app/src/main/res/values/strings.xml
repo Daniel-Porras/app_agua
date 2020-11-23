@@ -18,6 +18,11 @@
     <string name="boton1.1">¿Cuánto quieres ahorrar este mes?</string>
     <string name="volver_boton1">Volver</string>
     <string name="cantidad_ahorrar">Digite una cantidad en pesos</string>
+    <string name="boton2.1">Imagen1</string>
+    <string name="boton2.2">Imagen2</string>
+    <string name="boton2.3">Imagen3</string>
+    <string name="boton2.4">Imagen4</string>
+
 
 
 </resources>
