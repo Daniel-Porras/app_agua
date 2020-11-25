@@ -84,7 +84,7 @@ public class Boton4 extends AppCompatActivity {
     }
 
     public void createCharts(){
-        barChart= (BarChart)getSameChart(barChart,"Consumo",Color.BLACK,Color.TRANSPARENT,3000);
+        barChart= (BarChart)getSameChart(barChart," ",Color.BLACK,Color.TRANSPARENT,3000);
         barChart.setDrawGridBackground(true);
         barChart.setDrawBarShadow(true);
         barChart.setData(getBarData());
