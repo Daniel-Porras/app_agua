@@ -9,10 +9,13 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class Boton6 extends AppCompatActivity {
     private ProgressBar progressBar;
     private TextView progresstext;
     int i = 0;
+    Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +30,10 @@ public class Boton6 extends AppCompatActivity {
             @Override
             public void run() {
                 if (i<=100){
+                    int c =random.nextInt(5);
                     progresstext.setText(""+i+"%");
                     progressBar.setProgress(i);
-                    i++;
+                    i+=c;
                     handler.postDelayed(this, 500);
                 }
                 else{
