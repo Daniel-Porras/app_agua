@@ -26,6 +26,8 @@
     <string name="boton3.2">Imagen3</string>
     <string name="boton3.3">Imagen4</string>
     <string name="proceso">Empezar proceso de electrocoagulación:</string>
+    <string name="sensorgas">           Sensor de gas</string>
+    <string name="sgas">No se detecta gas</string>
 
 
 
